@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/statusText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="未连接"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/scanButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="扫描并连接 BBWF Watch" />
+
+        <TextView
+            android:id="@+id/watchStatusText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="手表状态会显示在这里"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/refreshButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="刷新手表状态" />
+
+        <Button
+            android:id="@+id/setPhoneTimeButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="用手机时间校准手表" />
+
+        <EditText
+            android:id="@+id/ssidEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:hint="WiFi 名称"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/passEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="WiFi 密码"
+            android:inputType="textPassword" />
+
+        <Button
+            android:id="@+id/saveWifiButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="保存联网配置" />
+
+        <EditText
+            android:id="@+id/alarmEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:hint="闹钟时间，例如 07:30"
+            android:inputType="time" />
+
+        <Button
+            android:id="@+id/addAlarmButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="添加闹钟" />
+
+        <EditText
+            android:id="@+id/alarmIdEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="闹钟编号，第一条是 0"
+            android:inputType="number" />
+
+        <Button
+            android:id="@+id/toggleAlarmButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="开关闹钟" />
+
+        <Button
+            android:id="@+id/deleteAlarmButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="删除闹钟" />
+
+        <TextView
+            android:id="@+id/selectedBookText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="未选择小说 TXT"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/selectBookButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="选择小说 TXT" />
+
+        <Button
+            android:id="@+id/uploadBookButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="通过局域网上传小说到手表" />
+
+        <EditText
+            android:id="@+id/lanIpEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="手表局域网 IP，例如 192.168.1.23"
+            android:inputType="textUri" />
+
+        <Button
+            android:id="@+id/useLanIpButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="使用状态里的局域网 IP" />
+
+        <EditText
+            android:id="@+id/bookIdEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="小说编号，第一本是 0"
+            android:inputType="number" />
+
+        <Button
+            android:id="@+id/deleteBookButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="删除小说" />
+
+    </LinearLayout>
+</ScrollView>
